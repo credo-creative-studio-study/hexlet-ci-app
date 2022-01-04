@@ -11,6 +11,8 @@ jobs:
           with:
             node-version: '16'
         - name: install
+          run: make setup
+        - name: tests
           run: make test
         - name: lint
           run: make lint

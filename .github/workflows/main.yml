@@ -6,10 +6,6 @@ jobs:
       steps:
         - name: clone
           uses: actions/checkout@v2
-        - name: node-install
-          uses: actions/setup-node@v2
-          with:
-            node-version: '16'
         - name: install
           run: make setup
         - name: tests
